@@ -74,3 +74,20 @@ avBtn2.addEventListener('click',() =>{
 		document.body.classList.toggle("overflow");
 		
 		})
+
+		navBtn3.addEventListener('click',() =>{
+			portfolio.classList.add("sec-dis")
+			about.classList.remove("sec-dis")
+			navBtn1.classList.remove("active")
+			navBtn3.classList.add("active")
+			navBtn4.classList.remove("active")
+			contact.classList.remove("sec-dis")
+			
+			navBtn5.classList.remove("active")
+			services.classList.remove("sec-dis")
+			navBtn2.classList.remove("active")
+			skills.classList.remove("sec-dis")
+			nav.classList.toggle("dis");
+			document.body.classList.toggle("overflow");
+			
+			})
