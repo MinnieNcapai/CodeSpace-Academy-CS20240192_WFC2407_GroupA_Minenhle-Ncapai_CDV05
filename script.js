@@ -1,29 +1,8 @@
 const hamBtn = document.querySelector(".ham-btn");
 const nav = document.querySelector(".nav");
-
-hamBtn.addEventListener("click", () => {
-  nav.classList.toggle("dis");
-  document.body.classList.toggle("overflow");
-});
 const day = document.querySelector(".day");
-
-day.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  day.style.display = "none";
-  night.style.display = "block";
-});
 const night = document.querySelector(".night");
-
-night.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  night.style.display = "none";
-  day.style.display = "block";
-});
-
 const preloader = document.querySelector(".pre-loader");
-
-window.addEventListener("load", () => (preloader.style.display = "none"));
-
 
 const conbtn = document.querySelector(".conbtn");
 const navBtn1 = document.querySelector(".nav-btn1");
@@ -38,7 +17,32 @@ const portfolio = document.querySelector(".portfolios");
 const services = document.querySelector(".services");
 const contact = document.querySelector(".contact");
 
-avBtn2.addEventListener('click',() =>{
+// Toggle menu
+hamBtn.addEventListener("click", () => {
+  nav.classList.toggle("dis");
+  document.body.classList.toggle("overflow");
+});
+
+// Toggle dark mode
+day.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  day.style.display = "none";
+  night.style.display = "block";
+});
+
+
+night.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  night.style.display = "none";
+  day.style.display = "block";
+});
+
+// Preloader hide on load
+window.addEventListener("load", () => (preloader.style.display = "none"));
+
+
+// Section navigation
+navBtn2.addEventListener('click',() =>{
 	portfolio.classList.remove("sec-dis")
 	about.classList.remove("sec-dis")
 	services.classList.remove("sec-dis")
@@ -132,4 +136,5 @@ avBtn2.addEventListener('click',() =>{
 						contact.classList.add("sec-dis")
 						navBtn5.classList.add("active")
 						
-						})				
+						})
+
