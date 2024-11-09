@@ -38,3 +38,23 @@ const portfolio = document.querySelector(".portfolios");
 const services = document.querySelector(".services");
 const contact = document.querySelector(".contact");
 
+avBtn2.addEventListener('click',() =>{
+	portfolio.classList.remove("sec-dis")
+	about.classList.remove("sec-dis")
+	services.classList.remove("sec-dis")
+	
+	contact.classList.remove("sec-dis")
+	
+	navBtn5.classList.remove("active")
+	
+	navBtn1.classList.remove("active")
+	navBtn3.classList.remove("active")
+	navBtn4.classList.remove("active")
+	
+	navBtn2.classList.add("active")
+	skills.classList.add("sec-dis")
+	nav.classList.toggle("dis");
+	document.body.classList.toggle("overflow");
+	
+	})
+	
