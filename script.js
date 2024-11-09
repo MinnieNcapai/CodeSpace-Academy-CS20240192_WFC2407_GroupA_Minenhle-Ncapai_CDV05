@@ -37,3 +37,4 @@ const skills = document.querySelector(".skills");
 const portfolio = document.querySelector(".portfolios");
 const services = document.querySelector(".services");
 const contact = document.querySelector(".contact");
+
