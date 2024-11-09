@@ -124,4 +124,12 @@ avBtn2.addEventListener('click',() =>{
 					nav.classList.toggle("dis");
 					document.body.classList.toggle("overflow");
 					
-					})					
+					})	
+	
+					conbtn.addEventListener('click',() =>{
+						about.classList.remove("sec-dis")
+						navBtn1.classList.remove("active")
+						contact.classList.add("sec-dis")
+						navBtn5.classList.add("active")
+						
+						})				
