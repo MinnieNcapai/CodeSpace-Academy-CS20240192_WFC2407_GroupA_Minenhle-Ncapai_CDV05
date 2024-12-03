@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root{
-    --black:#000;
+    --black:#590a59da;
     --white:#fff;
-    --gray:#333;
-    --primary:#8BFBFF;
-    --secondary:#FB38C8;
-    --third:#FF602A;
+    --gray:#0f0f0f;
+    --primary:#ae8bff;
+    --secondary:#38e7fb;
+    --third:#2aff46;
 
     
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -23,11 +24,11 @@ body{
 body.dark{
     transition: all 0.3s ease;
     --black:#fff;
-    --white:#000;
+    --white:#b95b98;
     --gray:#333;
     --secondary:#8BFBFF;
     --primary:#FB38C8;
-    --third:#FF602A;
+    --third:#38ec4d;
 }
 body.overflow{
     overflow: hidden;
@@ -215,6 +216,7 @@ header{
 .header-img img{
     width: 370px;
     transform: translateY(50px);
+    border-radius: 10px;
 }
 
 .effects span{
@@ -311,12 +313,15 @@ header{
 }
 .portfolio .pi4{
     background-image: url(Images/jsl09.png);
+    margin-bottom: 20px;
 }
 .portfolio .pi5{
     background-image: url(Images/jsl10.png);
+    margin-bottom: 20px;
 }
 .portfolio .pi6{
     background-image: url(Images/djs03.png);
+    margin-bottom: 20px;
 }
 .portfolio .img::before{
     content: '';
